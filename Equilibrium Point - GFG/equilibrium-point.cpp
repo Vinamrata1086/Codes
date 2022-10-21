@@ -12,20 +12,35 @@ class Solution{
     int equilibriumPoint(long long a[], int n) {
     
         // Your code here
+        // space complexity---- O(N)
+        // int sum, l_sum, r_sum;
+        // int p[n];
+        // for(int i=0;i<n;i++){
+        //     if(i==0)
+        //     p[i]=a[i];
+        //     else
+        //     p[i]=p[i-1]+a[i];
+        // }
+        // sum=p[n-1];
+        // for(int i=0;i<n;i++){
+        //     l_sum=p[i]-a[i];
+        //     r_sum=sum-p[i];
+        //     if(l_sum==r_sum)
+        //     return i+1;
+        // }return -1;
+        
+        // SPACE COMPLEXITY----- O(1)
         int sum, l_sum, r_sum;
-        int p[n];
+        l_sum=0;
+        sum=0;
         for(int i=0;i<n;i++){
-            if(i==0)
-            p[i]=a[i];
-            else
-            p[i]=p[i-1]+a[i];
+            sum = sum+a[i];
         }
-        sum=p[n-1];
         for(int i=0;i<n;i++){
-            l_sum=p[i]-a[i];
-            r_sum=sum-p[i];
-            if(l_sum==r_sum)
-            return i+1;
+            r_sum = sum - l_sum-a[i];
+            if(r_sum==l_sum)
+                return i+1;
+            l_sum=l_sum+a[i];
         }return -1;
     }
 
