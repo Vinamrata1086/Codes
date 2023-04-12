@@ -29,17 +29,23 @@ three factorial numbers.</span></pre>
 
 
 <p><span style="font-size:18px"><strong>Your Task:</strong><br>
+</span></p>
+</div>
 You don't need to read input or print anything. Your task is to complete the function  <strong>factorialNumbers()</strong> which takes an integer N&nbsp; as an input parameter and return the list/vector of the factorial numbers smaller than or equal to N&nbsp;.</span></p>
 
-<p><span style="font-size:18px"><strong>Expected Time Complexity</strong>: O(K)<br>, Where K is the number of factorial numbers.
+<p><span style="font-size:18px"><strong>Expected Time Complexity</strong>: O(K), Where K is the number of factorial numbers.<br>
 <strong>Expected Auxiliary Space</strong> : O(1)</span></p>
 
 <p><span style="font-size:18px"><strong>Constraints: </strong></span><br>
-<span style="font-size:18px">1&lt;<=N &lt;<=1018<br>
+<span style="font-size:18px">1&lt;=N &lt;=1018<br>
 
 
+<div><p>
+<span style="font-size:18px"><strong>Code:</strong></span><br>
+</p></div>
 
-Code:
+
+```cpp
 
 //{ Driver Code Starts
 #include<bits/stdc++.h> 
@@ -91,3 +97,4 @@ int main()
     return 0;
 }
 // } Driver Code Ends
+```
