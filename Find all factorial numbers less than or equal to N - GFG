@@ -1,35 +1,41 @@
-A number N is called a factorial number if it is the factorial of a positive integer. For example, the first few factorial numbers are 1, 2, 6, 24, 120,
-Given a number N, the task is to return the list/vector of the factorial numbers smaller than or equal to N.
+# Find all factorial numbers less than or equal to N
+## Basic
 
-Example 1:
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">A number N&nbsp; is called a factorial number if it is the factorial of a positive integer. For example, the first few factorial numbers are 1, 2, 6, 24, 120,
+Given a number N&nbsp;, the task is to return the list/vector of the factorial numbers smaller than or equal to N&nbsp;.</span></p>
 
-Input: N = 3
-Output: 1 2
-Explanation: The first factorial number is 
+<p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
+
+<pre><span style="font-size:18px"><strong>Input:</strong>
+N = 3
+<strong>Output: </strong>1 2</span>
+Explanation: </strong>The first factorial number is 
 1 which is less than equal to N. The second 
 number is 2 which is less than equal to N,
 but the third factorial number is 6 which 
-is greater than N. So we print only 1 and 2.
+is greater than N. So we print only 1 and 2.</span></pre>
 
 
-Example 2:
+<p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
 
-Input: N = 6
-Output: 1 2 6
-Explanation: The first three factorial 
+<pre><span style="font-size:18px"><strong>Input:</strong> 
+N = 6
+<strong>Output: </strong> 1 2 6</span>
+Explanation: </strong>The first three factorial 
 numbers are less than equal to N but 
 the fourth factorial number 24 is 
 greater than N. So we print only first 
-three factorial numbers.
+three factorial numbers.</span></pre>
 
-Your Task:  
-You don't need to read input or print anything. Your task is to complete the function factorialNumbers() which takes an integer N as an input parameter and return the list/vector of the factorial numbers smaller than or equal to N.
 
-Expected Time Complexity: O(K), Where K is the number of factorial numbers.
-Expected Auxiliary Space: O(1)
+<p><span style="font-size:18px"><strong>Your Task:</strong><br>
+You don't need to read input or print anything. Your task is to complete the function  <strong>factorialNumbers()</strong> which takes an integer N&nbsp; as an input parameter and return the list/vector of the factorial numbers smaller than or equal to N&nbsp;.</span></p>
 
-Constraints:
-1<=N<=1018
+<p><span style="font-size:18px"><strong>Expected Time Complexity</strong>: O(K)<br>, Where K is the number of factorial numbers.
+<strong>Expected Auxiliary Space</strong> : O(1)</span></p>
+
+<p><span style="font-size:18px"><strong>Constraints: </strong></span><br>
+<span style="font-size:18px">1&lt;<=N &lt;<=1018<br>
 
 
 
