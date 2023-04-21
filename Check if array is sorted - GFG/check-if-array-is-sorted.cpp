@@ -11,12 +11,16 @@ class Solution {
   public:
     bool arraySortedOrNot(int arr[], int n) {
         // code here
-        // int min=INT_MIN;
-        // bool a=1;
+        // for(int i=1;i<n;i++){
+        //     if(arr[i]>=arr[i-1])
+        //     {}
+        //     else
+        //     return 0;
+        // }return 1;
+        
+        // or
         for(int i=1;i<n;i++){
-            if(arr[i]>=arr[i-1])
-            {}
-            else
+            if(arr[i]<arr[i-1])
             return 0;
         }return 1;
     }
