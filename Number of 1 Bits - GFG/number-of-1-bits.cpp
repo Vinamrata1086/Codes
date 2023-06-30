@@ -7,28 +7,40 @@ class Solution {
   public:
     int setBits(int N) {
         // Write Your Code here
-        int count=0;
-        string s="";
+        // int count=0;
+        // string s="";
+        // while(N>0){
+        //     if(N==1){
+        //         s.push_back('1');
+        //         break;
+        //     }
+        //     else if(N%2==0){
+        //         N=N/2;
+        //         s.push_back('0');
+        //     }
+        //     else if(N%2==1){
+        //         N=N/2;
+        //         s.push_back('1');
+        //     }
+        // }
+        // for(int i=0;i<s.length();i++)
+        // {
+        //     if(s[i]=='1')
+        //         count++;
+        // }
+        // return count;
+        
+        int count =0;
         while(N>0){
-            if(N==1){
-                s.push_back('1');
-                break;
-            }
-            else if(N%2==0){
-                N=N/2;
-                s.push_back('0');
-            }
-            else if(N%2==1){
-                N=N/2;
-                s.push_back('1');
-            }
-        }
-        for(int i=0;i<s.length();i++)
-        {
-            if(s[i]=='1')
+            if((N & 1)==1){
                 count++;
+            }
+            N=N>>1;
         }
         return count;
+        
+        
+        
         
     }
 };
