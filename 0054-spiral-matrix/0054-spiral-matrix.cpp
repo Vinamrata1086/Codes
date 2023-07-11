@@ -12,10 +12,10 @@ public:
 //             }
 //             top+=1;
         
-//                 for(int i=top;i<=bottom;i++){
-//                     v.push_back(matrix[i][right]);
-//                 }
-//                 right-=1;
+                // for(int i=top;i<=bottom;i++){
+                //     v.push_back(matrix[i][right]);
+                // }
+                // right-=1;
             
 //           if(left<=bottom){
 //                 for(int i= right;i>=left;i--){
@@ -50,10 +50,10 @@ public:
             }
             top+=1;
             
-            for (int i = top; i <= bottom; i++) {
-                v.push_back(matrix[i][right]);
-            }
-            right--;
+           for(int i=top;i<=bottom;i++){
+                    v.push_back(matrix[i][right]);
+                }
+                right-=1;
             
             if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
