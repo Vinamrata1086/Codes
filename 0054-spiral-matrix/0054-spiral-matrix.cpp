@@ -44,11 +44,11 @@ public:
        
         vector<int> v;
         
-        while (left <= right && top <= bottom) {
-            for (int i = left; i <= right; i++) {
-                v.push_back(matrix[top][i]);
+       while(top<=bottom && left<=right){
+                for(int i=left; i<=right;i++){
+                    v.push_back(matrix[top][i]);
             }
-            top++;
+            top+=1;
             
             for (int i = top; i <= bottom; i++) {
                 v.push_back(matrix[i][right]);
