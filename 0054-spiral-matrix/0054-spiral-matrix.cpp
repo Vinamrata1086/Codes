@@ -34,9 +34,15 @@ public:
 //         }
 //         return v;
         
+        // vector<int> v;
+        // int n = matrix.size(), m = matrix[0].size();
+        // int left = 0, right = m-1, top = 0, bottom = n-1;
+        
+        int n=matrix.size();
+        int m=matrix[0].size();
+        int top=0, bottom=n-1, left=0, right = m-1;
+       
         vector<int> v;
-        int n = matrix.size(), m = matrix[0].size();
-        int left = 0, right = m-1, top = 0, bottom = n-1;
         
         while (left <= right && top <= bottom) {
             for (int i = left; i <= right; i++) {
