@@ -17,10 +17,15 @@ class Solution
             mp[S[i]]++;
         }
         
-        for(int i=0; i<S.length();i++){
-            if(mp[S[i]]==1)
-            return S[i];
+        for(auto it: S){
+            if(mp[it]==1)
+            return it;
         }
+        
+        // for(int i=0; i<S.length();i++){
+        //     if(mp[S[i]]==1)
+        //     return S[i];
+        //}
         return '$';
     }
 };
