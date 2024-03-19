@@ -10,46 +10,37 @@ using namespace std;
 
 class Solution{
 public:
+
+    // void fun(stack<int> st,int x, int count){
+        
+        
+    //     if(count==st.size()-1)
+    //   { 
+    //       st.push(x);
+    //     return;
+    //   }
+       
+       
+    //   fun(st,x,count+1);
+       
+       
+    // }
     
-    void fun(stack<int> &St,int X){
-         if(St.empty())
-        {
-            St.push(X);
-            return;
+    stack<int> insertAtBottom(stack<int> st,int x){
+        // int count=0;
+        // return fun(st,x,count);
+        if(st.empty())
+        {st.push(x);
+            return st;
         }
-        int temp = St.top();
-        St.pop();
-        fun(St,X);
-        St.push(temp);
+        int ans=st.top();
+       st.pop();
+       st=insertAtBottom(st,x);
+       st.push(ans);
+       return st;
+       
     }
-    stack<int> insertAtBottom(stack<int> St,int X){
-      fun(St, X);
-      return St;
-        
-    }
-    
-    // void solve(stack<int> &St , int X){
-    //     if(St.empty())
-    //     {
-    //       St.push(X);
-    //       return;
-    //     }
-    //     int num =  St.top();
-    //     St.pop();
-        
-    //     solve(St, X);
-    //     St.push(num);
-    // }
-    // stack<int> insertAtBottom(stack<int> St,int X){
-    
-        
-    //     solve(St, X);
-    //     return St;
-    // }
-
-
 };
-
 
 //{ Driver Code Starts.
 
