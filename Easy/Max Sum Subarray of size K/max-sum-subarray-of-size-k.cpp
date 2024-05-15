@@ -16,14 +16,14 @@ public:
         while(j<N){
             s=s+Arr[j];
 
-        if((j-i+1)<K)
-        j++;
-        else if((j-i+1)==K){
-            maxm=max(maxm,s);
-            s=s-Arr[i];
-            i++;
+            if((j-i+1)<K)
             j++;
-        }
+            else if((j-i+1)==K){
+                maxm=max(maxm,s);
+                s=s-Arr[i];
+                i++;
+                j++;
+           }
         }
         return maxm;
     }
